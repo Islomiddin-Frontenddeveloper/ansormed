@@ -11,6 +11,10 @@ body{
   color: #444;
   background-color: #fff;
 }
+*:focus{
+  outline: 2px dotted #DE2E54;
+  outline-offset: 2px;
+}
 
 /* CONTAINER */
 .container{
@@ -20,4 +24,90 @@ body{
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Site Header */
+.site-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.site-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Site-logo */
+.site-logo {
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.site-logo:hover{
+color: #DE2E54
+}
+.site-logo:active {
+  opacity: 0.6;
+}
+.site-logo-img{
+  margin-right: 16px;
+}
+
+
+/* Sitenav */
+.sitenav {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sitenav-list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav-item:not(:last-child){
+  margin-right: 32px;
+}
+.sitenav-link{
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+.sitenav-link:hover{
+  color: #F91267;
+}
+.sitenav-link:active{
+  opacity: 0.6;
+}
+
+
+/* Main link */
+.main-link{
+  display: inline-block;
+  font-family: "Roboto condensed","Arial",sans-serif;
+  border: 2px solid #DE2E54;
+  padding: 10px 22px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  background-color: #f91267;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-link:hover{
+  background-color: #fff;
+  color: #f91267;
+}
+.main-link:active{
+  opacity: 0.6;
+  color: #fff;
+  background-color: #F91267;
 }
